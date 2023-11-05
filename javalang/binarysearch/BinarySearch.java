@@ -17,12 +17,15 @@ public class BinarySearch {
     }
 
     public static void main(String[] args) {
+        System.out.println("testing binary search in java...");
         int[] array = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
 
         boolean result = BinarySearch.binarySearch(array, 5);
+        System.out.println("result 1: " + result);
         assert result == true;
 
         result = BinarySearch.binarySearch(array, 10);
+        System.out.println("result 2: " + result);
         assert result == false;
     }
 }

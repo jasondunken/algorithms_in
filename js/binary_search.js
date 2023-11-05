@@ -14,11 +14,11 @@ function binary_search(array, query) {
 
 const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
-console.log("binary_search testing...");
+console.log("testing binary_search javascript...");
 let result = binary_search(arr, 5);
 console.log("result 1: ", result);
-console.assert(result === true, "%o", { error: "array does contain 5" });
+console.assert(result === true, "%o", { result, error: "array does contain 5" });
 
 result = binary_search(arr, 10);
 console.log("result 2: ", result);
-console.assert(result === false, "%o", { error: "array does not contain 10" });
+console.assert(result === false, "%o", { result, error: "array does not contain 10" });

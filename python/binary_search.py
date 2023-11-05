@@ -13,6 +13,8 @@ def binary_search(array, query):
         i = l + (r - l) // 2
     return False
 
+
+print("testing binary search in python...")
 arr = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 
 result = binary_search(arr, 5)
