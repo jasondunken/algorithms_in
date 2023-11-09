@@ -18,9 +18,9 @@ print("testing binary search in python...")
 arr = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 
 result = binary_search(arr, 5)
-print("result 1: " + str(result))
+print("result 1: ", result)
 assert result == True
 
 result = binary_search(arr, 10)
-print("result 2: " + str(result))
+print("result 2: ", result)
 assert result == False
