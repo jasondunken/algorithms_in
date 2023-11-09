@@ -7,3 +7,4 @@
 -   Java
 -   Javascript
 -   Python
+-   Rust

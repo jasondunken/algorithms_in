@@ -1,6 +1,8 @@
 cs/algorithms_in/bin/
 cs/algorithms_in/obj/
 
+rust/algorithms_in/target/
+
 algorithms_in.sln
 
 .vscode/
