@@ -14,7 +14,7 @@ function binary_search(array, query) {
 
 const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
-console.log("testing binary_search javascript...");
+console.log("testing binary search in javascript...");
 let result = binary_search(arr, 5);
 console.log("result 1: ", result);
 console.assert(result === true, "%o", { result, error: "array does contain 5" });
