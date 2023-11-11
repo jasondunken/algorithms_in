@@ -1,3 +1,4 @@
+// returns true if query found, false if not
 function recursive_binary_search(array, query) {
     if (array.length == 0) return false;
 
