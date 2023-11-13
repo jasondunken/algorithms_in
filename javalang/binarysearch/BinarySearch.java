@@ -21,7 +21,7 @@ public class BinarySearch {
         int[] array = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
 
         int result = BinarySearch.binarySearch(array, 5);
-        System.out.println("result 1: " + result+ " -> expected 4");
+        System.out.println("result 1: " + result + " -> expected 4");
         assert result == 4;
 
         result = BinarySearch.binarySearch(array, 10);
