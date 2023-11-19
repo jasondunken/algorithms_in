@@ -1,7 +1,5 @@
 package javalang.recursive_binary_search;
 
-import java.util.Arrays;
-
 public class RecursiveBinarySearch {
     
     public static boolean recursive_binary_search(int[] array, int l, int r, int query) {
