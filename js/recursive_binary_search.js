@@ -1,15 +1,15 @@
 // returns true if query found, false if not
-function recursive_binary_search(array, query) {
-    if (array.length == 0) return false;
+function recursive_binary_search(array, l, r, query) {
+    if (l >= r) return false;
 
-    let i = Math.floor(array.length / 2);
+    let i = Math.floor(l + (r - l) / 2);
 
     if (array[i] === query) return true;
     if (array[i] < query) {
-        return recursive_binary_search(array.slice(i + 1), query);
+        return recursive_binary_search(array, l + 1, r, query);
     }
     if (array[i] > query) {
-        return recursive_binary_search(array.slice(0, i), query);
+        return recursive_binary_search(array, l, r - 1, query);
     }
 }
 
@@ -17,8 +17,8 @@ function recursive_binary_search(array, query) {
 
 console.log("testing recursive binary search in javascript...");
 //let result = recursive_binary_search(arr, 5);
-result = recursive_binary_search(arr, 5);
+result = recursive_binary_search(arr, 0, arr.length - 1, 5);
 console.log("result 1: ", result, " -> expected true");
 
-result = recursive_binary_search(arr, 10);
+result = recursive_binary_search(arr, 0, arr.length - 1, 10);
 console.log("result 2: ", result, " -> expected false");
