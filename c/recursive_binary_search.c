@@ -21,10 +21,10 @@ bool recursiveBinarySearch(int *array, int l, int r, int query) {
 
     if (array[i] == query) return true;
     if (array[i] < query) {
-        return recursiveBinarySearch(array, l + 1, r, query);
+        return recursiveBinarySearch(array, i + 1, r, query);
     }
     if (array[i] > query) {
-        return recursiveBinarySearch(array, l, r - 1, query);
+        return recursiveBinarySearch(array, l, i - 1, query);
     }
 
     return false;

@@ -6,10 +6,10 @@ function recursive_binary_search(array, l, r, query) {
 
     if (array[i] === query) return true;
     if (array[i] < query) {
-        return recursive_binary_search(array, l + 1, r, query);
+        return recursive_binary_search(array, i + 1, r, query);
     }
     if (array[i] > query) {
-        return recursive_binary_search(array, l, r - 1, query);
+        return recursive_binary_search(array, l, i - 1, query);
     }
 }
 

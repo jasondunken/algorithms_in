@@ -8,7 +8,7 @@ def recursive_binary_search(array, l, r, query):
     if array[i] < query:
         return recursive_binary_search(array, i + 1, r, query)
     if array[i] > query:
-        return recursive_binary_search(array, l, r - 1, query)
+        return recursive_binary_search(array, l, i - 1, query)
 
 
 print("testing recursive binary search in python...")
