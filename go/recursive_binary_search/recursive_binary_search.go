@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 func recursive_binarySearch(array []int, l int, r int, query int) bool {
-	if l >= r {
+	if l > r {
 		return false
 	}
 
@@ -22,7 +22,7 @@ func recursive_binarySearch(array []int, l int, r int, query int) bool {
 func main() {
 	fmt.Println("testing binary search in go...")
 	var array = []int{1, 2, 3, 4, 5, 6, 7, 8, 9}
-	var result bool = recursive_binarySearch(array, 0, len(array) - 1, 5)
+	var result bool = recursive_binarySearch(array, 0, len(array) - 1, 4)
 	fmt.Println("result 1:", result, "-> expected true.")
 
 	result = recursive_binarySearch(array, 0, len(array) - 1, 10)

@@ -1,6 +1,6 @@
 // returns true if query found, false if not
 function recursive_binary_search(array, l, r, query) {
-    if (l >= r) return false;
+    if (l > r) return false;
 
     let i = Math.floor(l + (r - l) / 2);
 

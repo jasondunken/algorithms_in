@@ -15,7 +15,7 @@ int main() {
 }
 
 bool recursiveBinarySearch(int *array, int l, int r, int query) {
-    if (l >= r) return false;
+    if (l > r) return false;
 
     int i = l + (r - l) / 2;
 

@@ -5,7 +5,7 @@ namespace algorithms_in;
 public class RecursiveBinarySearch
 {
         public static bool recursive_binary_search(int[] array, int l, int r, int query) {
-            if (l >= r) return false;
+            if (l > r) return false;
 
             int i = l + (r - l) / 2;
             if (array[i] == query) return true;
