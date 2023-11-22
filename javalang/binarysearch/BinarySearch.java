@@ -1,4 +1,4 @@
-package javalang.binarySearch;
+package javalang.binarysearch;
 
 public class BinarySearch {
     public static int binarySearch(int[] array, int query) {
