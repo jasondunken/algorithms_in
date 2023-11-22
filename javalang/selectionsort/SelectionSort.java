@@ -24,10 +24,11 @@ public class SelectionSort {
 
     public static void main(String[] args) {
         System.out.println("testing selection sort in java...");
-        int[] array = { 9, 5, 7, 1, 6, 2, 3, 8, 4 };
+        int[] unsortedArray = { 9, 5, 7, 1, 6, 2, 3, 8, 4 };
 
-        SelectionSort.selectionSort(array);
-        System.out.println("sorted array: " + Arrays.toString(array));
+        System.out.println("unsorted array: " + Arrays.toString(unsortedArray));
+        SelectionSort.selectionSort(unsortedArray);
+        System.out.println("sorted array: " + Arrays.toString(unsortedArray));
 
     }
 }
