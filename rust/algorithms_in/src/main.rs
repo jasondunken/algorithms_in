@@ -12,6 +12,8 @@ fn main() {
     index = binary_search::binary_search(&array, 10);
     println!("result 2: {} -> expected -1", index);
 
+    println!("testing recursive binary search in rust...");
+
     let mut result: bool = recursive_binary_search::recursive_binary_search(&array, 0, 8, 5);
     println!("result 3: {} -> expected true", result);
 
