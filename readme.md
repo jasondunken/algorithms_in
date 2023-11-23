@@ -15,3 +15,4 @@
 
 -   Sequential binary search
 -   Recursive binary search
+-   Selection sort
