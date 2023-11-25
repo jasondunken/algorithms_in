@@ -6,11 +6,12 @@ int main() {
     printf("testing recursive binary search in c...\n");
 
     int array[9] = {1, 2, 3, 4, 5, 6, 7, 8, 9};
+    int size = sizeof(array) / sizeof(int);
 
-    bool result = recursiveBinarySearch(array, 0, 8, 5);
+    bool result = recursiveBinarySearch(array, 0, size - 1, 5);
     printf("result 1: %s\n", result ? "true" : "false");
 
-    result = recursiveBinarySearch(array, 0, 8, 10);
+    result = recursiveBinarySearch(array, 0, size - 1, 10);
     printf("result 2: %s\n", result ? "true" : "false");
 }
 
