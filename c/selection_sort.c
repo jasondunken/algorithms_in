@@ -8,6 +8,7 @@ int main() {
 
     selection_sort(array, size);
 
+    printf("testing selection sort in c...\n");
     printf("sorted array -> [ %d", array[0]);
     for (int i = 1; i < size; i++) {
         printf(", %d", array[i]);
