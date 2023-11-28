@@ -10,6 +10,7 @@ int main() {
 
     selection_sort(array, size);
 
+    std::cout << "testing selection sort in c++...\n";
     std::cout << "sorted array -> [ " << array[0];
     for (int i = 1; i < size; i++) {
         std::cout ", " << array[i];
