@@ -1,6 +1,7 @@
 #include <iostream>
 
 void insertion_sort(int array[], int size);
+void insertion_sort_2(int array[], int size);
 
 int main() {
     int array[] = { 9, 5, 7, 1, 6, 2, 3, 8, 4 };
@@ -27,5 +28,15 @@ void insertion_sort(int array[], int size) {
             array[k + 1] = array[k];
         }
         array[k + 1] = currentElement;
+    }
+}
+
+void insertion_sort_2(int array[], int size) {
+    for (int i = 1; i < size; i++) {
+        for (int k = i; k > 0 && array[k - 1] > array[k]; k--) {
+            int temp = array[k - 1];
+            array[k - 1] = array[k];
+            array[k] = temp;
+        }
     }
 }
