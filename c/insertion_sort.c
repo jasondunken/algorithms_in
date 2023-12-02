@@ -4,12 +4,19 @@ void insertion_sort(int *array, int size);
 void insertion_sort_2(int *array, int size);
 
 int main() {
+    printf("testing insertion sort in c...\n");
+
     int array[] = { 9, 5, 7, 1, 6, 2, 3, 8, 4 };
     int size = sizeof(array) / sizeof(int);
 
+    printf("unsorted array -> [ %d", array[0]);
+    for (int i = 1; i < size; i++) {
+        printf(", %d", array[i]);
+    }
+    printf(" ]\n");
+
     insertion_sort(array, size);
 
-    printf("testing insertion sort in c...\n");
     printf("sorted array -> [ %d", array[0]);
     for (int i = 1; i < size; i++) {
         printf(", %d", array[i]);

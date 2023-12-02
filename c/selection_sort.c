@@ -3,12 +3,19 @@
 void selection_sort(int *array, int size);
 
 int main() {
+    printf("testing selection sort in c...\n");
+
     int array[] = { 9, 5, 7, 1, 6, 2, 3, 8, 4 };
     int size = sizeof(array) / sizeof(int);
 
+    printf("unsorted array -> [ %d", array[0]);
+    for (int i = 1; i < size; i++) {
+        printf(", %d", array[i]);
+    }
+    printf(" ]\n");
+
     selection_sort(array, size);
 
-    printf("testing selection sort in c...\n");
     printf("sorted array -> [ %d", array[0]);
     for (int i = 1; i < size; i++) {
         printf(", %d", array[i]);
@@ -18,7 +25,7 @@ int main() {
     return 0;
 }
 
-void selection_sort(int array, int size) {
+void selection_sort(int *array, int size) {
     for (i = 0; i < size; i++) {
         int currentMin = array[i];
         int currentMinIndex = i;
