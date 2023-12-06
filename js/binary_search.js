@@ -1,5 +1,5 @@
 // returns array index if query, found -1 if not
-function binary_search(array, query) {
+function binarySearch(array, query) {
     let l = 0;
     let r = array.length - 1;
 
@@ -13,13 +13,20 @@ function binary_search(array, query) {
     return -1;
 }
 
-const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+function testBinarySearch() {
+    output.innerHTML += "<h3>testing binary search in javascript...</h3>";
+    let array = getOrderedArray(10, 1);
+    output.innerHTML += `<p>array -> ${array}</p>`;
 
-console.log("testing binary search in javascript...");
-let result = binary_search(arr, 5);
-console.log("result 1: ", result, " -> expected 4");
-console.assert(result === 4, "%o", { result, error: "array does contain 5" });
+    let query = 5;
+    output.innerHTML += `searching for ${query}`;
+    let result = binarySearch(array, query);
+    output.innerHTML += `<p>result: ${result} -> expected 4</p>`;
 
-result = binary_search(arr, 10);
-console.log("result 2: ", result, " -> expected -1");
-console.assert(result === -1, "%o", { result, error: "array does not contain 10" });
+    query = 20;
+    output.innerHTML += `searching for ${query}`;
+    result = binarySearch(array, query);
+    output.innerHTML += `<p>result: ${result} -> expected -1</p>`;
+}
+
+testBinarySearch();

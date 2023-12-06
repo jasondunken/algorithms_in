@@ -19,14 +19,18 @@ function insertionSort2(array) {
     }
 }
 
-const unsortedArray2 = [4, 7, 2, 8, 3, 5, 1, 9, 6];
-console.log("testing insertion sort in javascript...");
-console.log("unsorted array -> ", unsortedArray2);
-insertionSort(unsortedArray2);
-console.log("sorted array -> ", unsortedArray2);
+function testInsertionSort() {
+    output.innerHTML += "<h3>testing insertion sort in javascript...</h3>";
+    let unsortedArray = getRandArray(10, 1);
+    output.innerHTML += `<p>unsorted array -> ${unsortedArray}</p>`;
+    recursiveSelectionSort(unsortedArray, 0, unsortedArray.length);
+    output.innerHTML += `<p>sorted array -> ${unsortedArray}</p>`;
 
-const unsortedArray3 = [4, 7, 2, 8, 3, 5, 1, 9, 6];
-console.log("testing insertion sort 2 in javascript...");
-console.log("unsorted array -> ", unsortedArray3);
-insertionSort2(unsortedArray3);
-console.log("sorted array -> ", unsortedArray3);
+    output.innerHTML += "<h3>testing insertion sort 2 in javascript...</h3>";
+    unsortedArray = getRandArray(10, 1);
+    output.innerHTML += `<p>unsorted array -> ${unsortedArray}</p>`;
+    recursiveSelectionSort(unsortedArray, 0, unsortedArray.length);
+    output.innerHTML += `<p>sorted array -> ${unsortedArray}</p>`;
+}
+
+testInsertionSort();

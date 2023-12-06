@@ -13,8 +13,12 @@ function bubbleSort(array) {
     }
 }
 
-const unsortedArray34 = [4, 7, 2, 8, 3, 5, 1, 9, 6];
-console.log("testing bubble sort in javascript...");
-console.log("unsorted array -> ", unsortedArray4);
-bubbleSort(unsortedArray4);
-console.log("sorted array -> ", unsortedArray4);
+function testBubbleSort() {
+    output.innerHTML += "<h3>testing bubble sort in javascript...</h3>";
+    const unsortedArray = getRandArray(10, 1);
+    output.innerHTML += `<p>unsorted array -> ${unsortedArray}</p>`;
+    bubbleSort(unsortedArray);
+    output.innerHTML += `<p>sorted array -> ${unsortedArray}</p>`;
+}
+
+testBubbleSort();

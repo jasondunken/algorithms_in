@@ -17,8 +17,12 @@ function selectionSort(array) {
     }
 }
 
-const unsortedArray = [4, 7, 2, 8, 3, 5, 1, 9, 6];
-console.log("testing selection sort in javascript...");
-console.log("unsorted array -> ", unsortedArray);
-selectionSort(unsortedArray);
-console.log("sorted array -> ", unsortedArray);
+function testSelectionSort() {
+    output.innerHTML += "<h3>testing selection sort in javascript...</h3>";
+    const unsortedArray = getRandArray(10, 1);
+    output.innerHTML += `<p>unsorted array -> ${unsortedArray}</p>`;
+    selectionSort(unsortedArray);
+    output.innerHTML += `<p>sorted array -> ${unsortedArray}</p>`;
+}
+
+testSelectionSort();
