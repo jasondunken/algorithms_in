@@ -3,6 +3,7 @@ mod recursive_binary_search;
 mod selection_sort;
 mod recursive_selection_sort;
 mod insertion_sort;
+mod bubble_sort;
 
 fn main() {
     test_binary_search();
@@ -10,6 +11,7 @@ fn main() {
     test_selection_sort();
     test_recursive_selection_sort();
     test_insertion_sort();
+    test_bubble_sort();
 }
 
 fn test_binary_search() {
@@ -75,4 +77,13 @@ fn test_insertion_sort() {
     println!("unsorted array -> {:?}", unsorted_array2);
     insertion_sort::insertion_sort_2(&mut unsorted_array2);
     println!("sorted array -> {:?}", unsorted_array2);
+}
+
+fn test_bubble_sort() {
+    println!("\ntesting bubble sort in rust...");
+    
+    let mut unsorted_array: [usize; 9] = [9, 5, 7, 1, 6, 2, 3, 8, 4];
+    println!("unsorted array -> {:?}", unsorted_array);
+    bubble_sort::bubble_sort(&mut unsorted_array);
+    println!("sorted array -> {:?}", unsorted_array);
 }
