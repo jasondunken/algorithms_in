@@ -16,4 +16,8 @@
 -   Sequential binary search
 -   Recursive binary search
 -   Selection sort
+-   Recursive selection sort
 -   Insertion sort
+-   Bubble sort
+-   Merge sort
+-   Quick sort
