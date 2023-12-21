@@ -4,7 +4,8 @@ mod selection_sort;
 mod recursive_selection_sort;
 mod insertion_sort;
 mod bubble_sort;
-mod merge_sort;
+// mod merge_sort;
+mod quick_sort;
 
 fn main() {
     test_binary_search();
@@ -13,7 +14,8 @@ fn main() {
     test_recursive_selection_sort();
     test_insertion_sort();
     test_bubble_sort();
-    test_merge_sort();
+    // test_merge_sort();
+    test_quick_sort();
 }
 
 fn test_binary_search() {
@@ -90,11 +92,21 @@ fn test_bubble_sort() {
     println!("sorted array -> {:?}", unsorted_array);
 }
 
-fn test_merge_sort() {
-    println!("\ntesting merge sort in rust...");
+// fn test_merge_sort() {
+//     println!("\ntesting merge sort in rust...");
+    
+//     let mut unsorted_array: [usize; 9] = [9, 5, 7, 1, 6, 2, 3, 8, 4];
+//     println!("unsorted array -> {:?}", unsorted_array);
+//     merge_sort::merge_sort(&mut unsorted_array);
+//     println!("sorted array -> {:?}", unsorted_array);
+// }
+
+fn test_quick_sort() {
+    println!("\ntesting quick sort in rust...");
     
     let mut unsorted_array: [usize; 9] = [9, 5, 7, 1, 6, 2, 3, 8, 4];
     println!("unsorted array -> {:?}", unsorted_array);
-    merge_sort::merge_sort(&mut unsorted_array);
+    let last: usize = unsorted_array.len() - 1;
+    quick_sort::quick_sort(&mut unsorted_array, 0, last);
     println!("sorted array -> {:?}", unsorted_array);
 }
