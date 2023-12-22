@@ -18,9 +18,9 @@ function recursiveSelectionSort(array, l, r) {
 function testRecursiveSelectionSort() {
     output.innerHTML += "<h3>testing recursive selection sort in javascript...</h3>";
     const unsortedArray = getRandArray(10, 1);
-    output.innerHTML += `<p>unsorted array -> ${unsortedArray}</p>`;
+    output.innerHTML += `<p>unsorted array -> [${unsortedArray}]</p>`;
     recursiveSelectionSort(unsortedArray, 0, unsortedArray.length);
-    output.innerHTML += `<p>sorted array -> ${unsortedArray}</p>`;
+    output.innerHTML += `<p>sorted array -> [${unsortedArray}]</p>`;
 }
 
 testRecursiveSelectionSort();

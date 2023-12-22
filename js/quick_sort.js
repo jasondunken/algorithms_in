@@ -43,9 +43,9 @@ function partition(array, first, last) {
 function testQuickSort() {
     output.innerHTML += "<h3>testing quick sort in javascript...</h3>";
     let unsortedArray = getRandArray(10, 1);
-    output.innerHTML += `<p>unsorted array -> ${unsortedArray}</p>`;
+    output.innerHTML += `<p>unsorted array -> [${unsortedArray}]</p>`;
     quickSort(unsortedArray, 0, unsortedArray.length - 1);
-    output.innerHTML += `<p>sorted array -> ${unsortedArray}</p>`;
+    output.innerHTML += `<p>sorted array -> [${unsortedArray}]</p>`;
 }
 
 testQuickSort();

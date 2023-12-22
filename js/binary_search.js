@@ -16,7 +16,7 @@ function binarySearch(array, query) {
 function testBinarySearch() {
     output.innerHTML += "<h3>testing binary search in javascript...</h3>";
     let array = getOrderedArray(10, 1);
-    output.innerHTML += `<p>array -> ${array}</p>`;
+    output.innerHTML += `<p>array -> [${array}]</p>`;
 
     let query = 5;
     output.innerHTML += `searching for ${query}`;

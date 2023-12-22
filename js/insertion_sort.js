@@ -22,15 +22,15 @@ function insertionSort2(array) {
 function testInsertionSort() {
     output.innerHTML += "<h3>testing insertion sort in javascript...</h3>";
     let unsortedArray = getRandArray(10, 1);
-    output.innerHTML += `<p>unsorted array -> ${unsortedArray}</p>`;
+    output.innerHTML += `<p>unsorted array -> [${unsortedArray}]</p>`;
     recursiveSelectionSort(unsortedArray, 0, unsortedArray.length);
-    output.innerHTML += `<p>sorted array -> ${unsortedArray}</p>`;
+    output.innerHTML += `<p>sorted array -> [${unsortedArray}]</p>`;
 
     output.innerHTML += "<h3>testing insertion sort 2 in javascript...</h3>";
     unsortedArray = getRandArray(10, 1);
-    output.innerHTML += `<p>unsorted array -> ${unsortedArray}</p>`;
+    output.innerHTML += `<p>unsorted array -> [${unsortedArray}]</p>`;
     recursiveSelectionSort(unsortedArray, 0, unsortedArray.length);
-    output.innerHTML += `<p>sorted array -> ${unsortedArray}</p>`;
+    output.innerHTML += `<p>sorted array -> [${unsortedArray}]</p>`;
 }
 
 testInsertionSort();

@@ -16,7 +16,7 @@ function recursiveBinarySearch(array, l, r, query) {
 function testRecursiveBinarySearch() {
     output.innerHTML += "<h3>testing recursive binary search in javascript...</h3>";
     let array = getOrderedArray(10, 1);
-    output.innerHTML += `<p>array -> ${array}</p>`;
+    output.innerHTML += `<p>array -> [${array}]</p>`;
 
     let query = 5;
     output.innerHTML += `searching for ${query}`;

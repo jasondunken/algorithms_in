@@ -16,9 +16,9 @@ function bubbleSort(array) {
 function testBubbleSort() {
     output.innerHTML += "<h3>testing bubble sort in javascript...</h3>";
     const unsortedArray = getRandArray(10, 1);
-    output.innerHTML += `<p>unsorted array -> ${unsortedArray}</p>`;
+    output.innerHTML += `<p>unsorted array -> [${unsortedArray}]</p>`;
     bubbleSort(unsortedArray);
-    output.innerHTML += `<p>sorted array -> ${unsortedArray}</p>`;
+    output.innerHTML += `<p>sorted array -> [${unsortedArray}]</p>`;
 }
 
 testBubbleSort();

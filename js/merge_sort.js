@@ -40,12 +40,12 @@ function merge(firstHalf, secondHalf) {
 
 output.innerHTML += "<h3>testing merge sort in javascript...</h3>";
 let unsortedArray = getRandArray(10, 1);
-output.innerHTML += `<p>unsorted array -> ${unsortedArray}`;
+output.innerHTML += `<p>unsorted array -> [${unsortedArray}]</p>`;
 let sortedArray = mergeSort(unsortedArray);
-output.innerHTML += `<p>sorted array -> ${sortedArray}`;
+output.innerHTML += `<p>sorted array -> [${sortedArray}]</p>`;
 
 output.innerHTML += "<h3>testing merge sort 2 in javascript...</h3>";
 let testArray = getRandArray(10, 1);
-output.innerHTML += `<p>unsorted array -> ${testArray}`;
+output.innerHTML += `<p>unsorted array -> [${testArray}]</p>`;
 mergeSort2(testArray);
-output.innerHTML += `<p>sorted array -> ${testArray}`;
+output.innerHTML += `<p>sorted array -> [${testArray}]</p>`;
