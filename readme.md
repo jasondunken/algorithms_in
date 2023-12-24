@@ -21,4 +21,4 @@
 -   Bubble sort
 -   Merge sort
 -   Quick sort
--   Sleep sort
+-   Sleep sort (an atypical one, not for production)
