@@ -30,9 +30,11 @@ int main() {
 }
 
 void quick_sort(int array[], int first, int last) {
-    int pivot_index = partition(array, first, last);
-    quick_sort(array, first, pivot_index - 1);
-    quick_sort(array, pivot_index + 1, last);
+    if (last > first) {
+        int pivot_index = partition(array, first, last);
+        quick_sort(array, first, pivot_index - 1);
+        quick_sort(array, pivot_index + 1, last);
+    }
 }
 
 int partition(int array[], int first, int last) {
