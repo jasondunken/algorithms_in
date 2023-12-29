@@ -4,9 +4,9 @@ class Heap {
     }
 
     add(value) {
-        this.list.push(value);
+        this.list.add(value);
 
-        let currentIndex = this.length - 1;
+        let currentIndex = this.list.size() - 1;
 
         while (currentIndex > 0) {
             let parentIndex = Math.floor((currentIndex - 1) / 2);
@@ -57,13 +57,14 @@ class Heap {
 
         return removedValue;
     }
+
     compare(v1, v2) {
         return this.list.get(v1) - this.list.get(v2);
     }
 
-    size() {
-        return this.list.size();
-    }
+    // size() {
+    //     return this.list.size();
+    // }
 }
 
 class ArrayList extends Array {
