@@ -45,6 +45,7 @@ public class Heap<E extends Comparable> {
             int rightChildIndex = 2 * currentIndex + 2;
 
             if (leftChildIndex >= list.size()) break;
+
             int maxIndex = leftChildIndex;
             if (rightChildIndex < list.size()) {
                 if (list.get(maxIndex).compareTo(list.get(rightChildIndex)) < 0) {
@@ -60,7 +61,6 @@ public class Heap<E extends Comparable> {
             } else {
                 break;
             }
-
         }
 
         return removedObject;
