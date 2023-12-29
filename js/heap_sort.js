@@ -61,10 +61,6 @@ class Heap {
     compare(v1, v2) {
         return this.list.get(v1) - this.list.get(v2);
     }
-
-    // size() {
-    //     return this.list.size();
-    // }
 }
 
 class ArrayList extends Array {
