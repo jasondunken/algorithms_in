@@ -64,16 +64,16 @@ class Heap {
 }
 
 class ArrayList extends Array {
-    get(index) {
-        return this[index];
-    }
-
     add(value) {
         this.push(value);
     }
 
     remove() {
         this.pop();
+    }
+
+    get(index) {
+        return this[index];
     }
 
     set(index, value) {
