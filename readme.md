@@ -22,4 +22,4 @@
 -   Merge sort
 -   Quick sort
 -   Heap sort
--   Sleep sort (an atypical one, not for production)
+-   Sleep sort (an atypical one, provided as example only)
