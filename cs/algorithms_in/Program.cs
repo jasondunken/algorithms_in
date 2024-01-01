@@ -8,6 +8,7 @@ testInsertionSort();
 testBubbleSort();
 testMergeSort();
 testQuickSort();
+testHeapSort();
 
 static void testBinarySearch() {
     Console.WriteLine("testing binary search in C#...");
@@ -82,5 +83,14 @@ static void testQuickSort() {
 
     Console.WriteLine("unsorted array -> [ {0} ]", string.Join(", ", unsortedArray));
     QuickSort.quickSort(unsortedArray, 0, unsortedArray.Length - 1);
+    Console.WriteLine("sorted array -> [ {0} ]", string.Join(", ", unsortedArray));
+}
+
+static void testHeapSort() {
+    Console.WriteLine("testing heap sort in C#...");
+    int[] unsortedArray = { 9, 5, 7, 1, 6, 2, 3, 8, 4 };
+
+    Console.WriteLine("unsorted array -> [ {0} ]", string.Join(", ", unsortedArray));
+    HeapSort.heapSort(unsortedArray);
     Console.WriteLine("sorted array -> [ {0} ]", string.Join(", ", unsortedArray));
 }
