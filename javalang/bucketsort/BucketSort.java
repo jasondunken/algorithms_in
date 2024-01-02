@@ -5,14 +5,14 @@ import java.util.ArrayList;
 
 public class BucketSort {
     public static void bucketSort(int[] list) {
-        int N = Integer.MIN_VALUE;
+        int n = Integer.MIN_VALUE;
         for (int i = 0; i < list.length; i++ ) {
-            if (list[i] > N) {
-                N = list[i];
+            if (list[i] > n) {
+                n = list[i];
             }
         }
 
-        ArrayList<Integer>[] buckets = new ArrayList[N + 1];
+        ArrayList<Integer>[] buckets = new ArrayList[n + 1];
 
         for (int i = 0; i < list.length; i++) {
             int key = list[i];

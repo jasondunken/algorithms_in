@@ -22,4 +22,5 @@
 -   Merge sort
 -   Quick sort
 -   Heap sort
+-   Bucket sort
 -   Sleep sort (an atypical one, provided as example only)
