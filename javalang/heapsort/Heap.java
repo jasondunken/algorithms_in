@@ -1,6 +1,6 @@
 package javalang.heapsort;
 
-public class Heap<E extends Comparable> {
+public class Heap<E extends Comparable<E>> {
     private java.util.ArrayList<E> list = new java.util.ArrayList<E>();
 
     public Heap() {}

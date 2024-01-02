@@ -1,7 +1,7 @@
 package javalang.heapsort;
 
 public class HeapSort {
-    public static <E extends Comparable> void heapSort(E[] list) {
+    public static <E extends Comparable<E>> void heapSort(E[] list) {
         Heap<E> heap = new Heap<E>();
 
         for (int i = 0; i < list.length; i++) {
