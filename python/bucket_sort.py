@@ -30,7 +30,7 @@ def bucket_sort_2(list):
         if val > max:
             max = val
 
-    range = max - min
+    range = max - min + 1
     offset = 0 - min
 
     buckets = [None] * (range)
@@ -58,7 +58,7 @@ print("sorted array -> " + str(unsortedArray))
 
 print("testing bucket sort 2 in python...")
 
-unsortedArray = [4, 1, -2, 5, 2, 8, 3, -1, 9, 7, 6]
+unsortedArray = [4, 1, -2, 5, 2, 0, 8, 3, -1, 9, 7, 6]
 print("unsorted array -> " + str(unsortedArray))
 bucket_sort_2(unsortedArray)
 print("sorted array -> " + str(unsortedArray))

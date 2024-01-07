@@ -44,7 +44,7 @@ function bucketSort2(array) {
         }
     }
 
-    const range = max - min;
+    const range = max - min + 1;
     const offset = 0 - min;
 
     const buckets = new Array(range).fill(null);
@@ -78,7 +78,7 @@ function testBucketSort() {
 
 function testBucketSort2() {
     output.innerHTML += "<h3>testing bucket sort 2 in javascript...</h3>";
-    const unsortedArray = getRandArray(10, -2);
+    const unsortedArray = getRandArray(9, -2);
     output.innerHTML += `<p>unsorted array -> [${unsortedArray}]</p>`;
     bucketSort2(unsortedArray);
     output.innerHTML += `<p>sorted array -> [${unsortedArray}]</p>`;
