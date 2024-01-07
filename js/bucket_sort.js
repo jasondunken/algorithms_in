@@ -45,15 +45,12 @@ function bucketSort2(array) {
     }
 
     const range = max - min;
-    console.log("range: ", range);
     const offset = 0 - min;
-    console.log("offset: ", offset);
 
     const buckets = new Array(range).fill(null);
-    console.log("buckets: ", buckets);
+
     for (let i = 0; i < array.length; i++) {
         const key = array[i] + offset;
-        console.log("key: ", key);
         if (buckets[key] == null) {
             buckets[key] = [];
         }
