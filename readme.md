@@ -3,13 +3,13 @@
 ### Languages
 
 -   [C](/c/)
--   [C#](/cs/)
+-   [C#](/cs/algorithms_in/)
 -   [C++](/cpp/)
 -   [Go](/go/)
 -   [Java](/javalang/)
 -   [Javascript](/js/)
 -   [Python](/python/)
--   [Rust](/rust/)
+-   [Rust](/rust/algorithms_in/src/)
 
 ### Algorithms
 
