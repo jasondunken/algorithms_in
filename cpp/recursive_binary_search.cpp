@@ -1,6 +1,6 @@
 #include <iostream>
 
-using namespace.std;
+using namespace std;
 
 bool recursive_binary_search(int[], int, int, int);
 

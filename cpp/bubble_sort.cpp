@@ -1,5 +1,7 @@
 #include <iostream>
 
+using namespace std;
+
 void bubble_sort(int array[], int size);
 
 int main() {

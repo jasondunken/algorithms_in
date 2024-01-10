@@ -1,5 +1,7 @@
 #include <iostream>
 
+using namespace std;
+
 void insertion_sort(int array[], int size);
 void insertion_sort_2(int array[], int size);
 
