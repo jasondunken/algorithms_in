@@ -31,6 +31,6 @@
 
 -   Heap sort ([C#](/cs/algorithms_in/heap_sort.cs), [Java](/javalang/heapsort/HeapSort.java), [Javascript](/js/heap_sort.js), [Python](/python/heap_sort.py))
 
--   Bucket sort ([C](/c/bucket_sort.c), [C#](/cs/algorithms_in/bucket_sort.cs), [C++](/cpp/bucket_sort.cpp), [Go](/go/bucket_sort/bucket_sort.go), [Java](/javalang/bucketsort/BucketSort.java), [Javascript](/js/bucket_sort.js), [Python](/python/bucket_sort.py))
+-   Bucket sort ([C](/c/bucket_sort.c), [C#](/cs/algorithms_in/bucket_sort.cs), [C++](/cpp/bucket_sort.cpp), [Go](/go/bucket_sort/bucket_sort.go), [Java](/javalang/bucketsort/BucketSort.java), [Javascript](/js/bucket_sort.js), [Python](/python/bucket_sort.py)), [Rust](/rust/algorithms_in/src/bucket_sort.rs)
 
 -   Sleep sort ([Javascript](/js/sleep_sort.js) an atypical one, provided as example only)

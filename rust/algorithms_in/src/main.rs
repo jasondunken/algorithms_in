@@ -6,6 +6,7 @@ mod insertion_sort;
 mod bubble_sort;
 // mod merge_sort;
 mod quick_sort;
+mod bucket_sort;
 
 fn main() {
     test_binary_search();
@@ -16,6 +17,7 @@ fn main() {
     test_bubble_sort();
     // test_merge_sort();
     test_quick_sort();
+    test_bucket_sort();
 }
 
 fn test_binary_search() {
@@ -108,5 +110,14 @@ fn test_quick_sort() {
     println!("unsorted array -> {:?}", unsorted_array);
     let last: usize = unsorted_array.len() - 1;
     quick_sort::quick_sort(&mut unsorted_array, 0, last);
+    println!("sorted array -> {:?}", unsorted_array);
+}
+
+fn test_bucket_sort() {
+    println!("\ntesting bucket sort in rust...");
+    
+    let mut unsorted_array: [i32; 11] = [9, 5, 7, 9, 1, 6, -1, 2, 3, 8, 4];
+    println!("unsorted array -> {:?}", unsorted_array);
+    bucket_sort::bucket_sort(&mut unsorted_array);
     println!("sorted array -> {:?}", unsorted_array);
 }
