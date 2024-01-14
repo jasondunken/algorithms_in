@@ -70,12 +70,43 @@ public class BucketSort {
         }
     }
 
+    public static void bucketSort3(int[] list) {
+        int min = list[0];
+        int max = list[0];
+        for (int i = 1; i < list.length; i++) {
+            if (list[i] < min) {
+                min = list[i];
+            }
+            if (list[i] > max) {
+                max = list[i];
+            }
+        }
+        int range = max - min + 1;
+        int offset = 0 - min;
+
+        int[] buckets = new int[range];
+
+        for (int i = 0; i < list.length; i++) {
+            int key = list[i] + offset;
+            buckets[key] = buckets[key] + 1;
+        }
+
+        int k = 0;
+        for (int i = 0; i < buckets.length; i++) {
+            if (buckets[i] > 0) {
+                for (int j = 0; j < buckets[i]; j++) {
+                    list[k++] = i - offset;
+                }
+            }
+        }
+    }
+
     public static void main(String[] args) {
         System.out.println("testing bucket sort in java...");
         int[] unsortedArray = { 9, 5, 7, 1, -6, 2, 5, 7, -1, 6, 2, 3, 8, 4 };
 
         System.out.println("unsorted array: " + Arrays.toString(unsortedArray));
-        bucketSort2(unsortedArray);
+        bucketSort3(unsortedArray);
         System.out.println("sorted array: " + Arrays.toString(unsortedArray));
     }
 }
