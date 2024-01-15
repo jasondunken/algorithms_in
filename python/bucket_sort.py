@@ -6,6 +6,7 @@ def bucket_sort(list):
             n = val
     
     buckets = [None] * (n + 1)
+    
     for val in list:
         if buckets[val] is None:
             buckets[val] = []
@@ -33,7 +34,7 @@ def bucket_sort_2(list):
     range = max - min + 1
     offset = 0 - min
 
-    buckets = [None] * (range)
+    buckets = [None] * range
 
     for val in list:
         key = val + offset
@@ -48,6 +49,31 @@ def bucket_sort_2(list):
                 list[k] = val
                 k += 1
 
+# bucket sort without array list
+def bucket_sort_3(list):
+    min = list[0]
+    max = list[0]
+    for i in range(1, len(list)):
+        if list[i] < min:
+            min = list[i]
+        if list[i] > max:
+            max = list[i]
+    
+    r = max - min + 1
+    offset = 0 - min
+
+    buckets = [0] * r
+
+    for val in list:
+        key = val + offset
+        buckets[key] = buckets[key] + 1
+    
+    k = 0
+    for i in range(len(buckets)):
+        if buckets[i] > 0:
+            for _ in range(buckets[i]):
+                list[k] = i - offset
+                k += 1
 
 print("testing bucket sort in python...")
 
@@ -61,4 +87,11 @@ print("testing bucket sort 2 in python...")
 unsortedArray = [4, 1, -2, 5, 2, 0, 8, 3, -1, 9, 7, 6]
 print("unsorted array -> " + str(unsortedArray))
 bucket_sort_2(unsortedArray)
+print("sorted array -> " + str(unsortedArray))
+
+print("testing bucket sort 3 in python...")
+
+unsortedArray = [4, 1, -2, 5, 2, 0, 8, 3, -1, 9, 7, 6]
+print("unsorted array -> " + str(unsortedArray))
+bucket_sort_3(unsortedArray)
 print("sorted array -> " + str(unsortedArray))
