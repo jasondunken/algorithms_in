@@ -68,6 +68,38 @@ function bucketSort2(array) {
     }
 }
 
+// without array
+function bucketSort3(list) {
+    let min = (max = list[0]);
+    for (let i = 1; i < list.length; i++) {
+        if (list[i] < min) {
+            min = list[i];
+        }
+        if (list[i] > max) {
+            max = list[i];
+        }
+    }
+
+    const range = max - min + 1;
+    const offset = 0 - min;
+
+    const buckets = new Array(range).fill(0);
+
+    for (let i = 0; i < list.length; i++) {
+        const key = list[i] + offset;
+        buckets[key] = buckets[key] + 1;
+    }
+
+    let k = 0;
+    for (let i = 0; i < buckets.length; i++) {
+        if (buckets[i] > 0) {
+            for (let j = 0; j < buckets[i]; j++) {
+                list[k++] = i - offset;
+            }
+        }
+    }
+}
+
 function testBucketSort() {
     output.innerHTML += "<h3>testing bucket sort in javascript...</h3>";
     const unsortedArray = getRandArray(10, 1);
@@ -84,5 +116,14 @@ function testBucketSort2() {
     output.innerHTML += `<p>sorted array -> [${unsortedArray}]</p>`;
 }
 
+function testBucketSort3() {
+    output.innerHTML += "<h3>testing bucket sort 3 in javascript...</h3>";
+    const unsortedArray = getRandArray(9, -2);
+    output.innerHTML += `<p>unsorted array -> [${unsortedArray}]</p>`;
+    bucketSort3(unsortedArray);
+    output.innerHTML += `<p>sorted array -> [${unsortedArray}]</p>`;
+}
+
 testBucketSort();
 testBucketSort2();
+testBucketSort3();
