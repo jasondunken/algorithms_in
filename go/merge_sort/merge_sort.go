@@ -2,14 +2,14 @@ package algorithms_in
 
 import "fmt"
 
-func merge_sort(array []int) {
+func mergeSort(array []int) {
 	if len(array) > 1 {
 		var midpoint int = len(array) / 2
 		var firstHalf []int = array[:midpoint];
-		merge_sort(firstHalf)
+		mergeSort(firstHalf)
 		
 		var secondHalf []int = array[midpoint:]
-		merge_sort(secondHalf)
+		mergeSort(secondHalf)
 
 		var temp []int = merge(firstHalf, secondHalf)
 		for i := 0; i < len(temp); i++ {
@@ -57,6 +57,6 @@ func main() {
 
 	var unsortedArray = []int{6, 2, 4, 8, 1, 9, 3, 5, 7}
 	fmt.Println("unsorted array -> ", unsortedArray)
-	merge_sort(unsortedArray)
+	mergeSort(unsortedArray)
 	fmt.Println("sorted array -> ", unsortedArray)
 }

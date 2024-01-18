@@ -2,11 +2,11 @@ package algorithms_in
 
 import "fmt"
 
-func quick_sort(list []int, first int, last int) {
+func quickSort(list []int, first int, last int) {
 	if (last > first) {
 		var pivotIndex int = partition(list, first, last)
-		quick_sort(list, first, pivotIndex - 1)
-		quick_sort(list, pivotIndex + 1, last)
+		quickSort(list, first, pivotIndex - 1)
+		quickSort(list, pivotIndex + 1, last)
 	}
 }
 
@@ -49,6 +49,6 @@ func main() {
 
 	var unsortedArray = []int{6, 2, 4, 8, 1, 9, 3, 5, 7}
 	fmt.Println("unsorted array -> ", unsortedArray)
-	quick_sort(unsortedArray, 0, len(unsortedArray) - 1)
+	quickSort(unsortedArray, 0, len(unsortedArray) - 1)
 	fmt.Println("sorted array -> ", unsortedArray)
 }

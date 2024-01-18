@@ -1,6 +1,6 @@
 package algorithms_in
 
-func bubble_sort(array []int) {
+func bubbleSort(array []int) {
 	var needsNextPass bool = true
 	for i := 1; i < len(array) && needsNextPass; i++ {
 		needsNextPass = false
