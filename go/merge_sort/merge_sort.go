@@ -1,13 +1,11 @@
 package algorithms_in
 
-import "fmt"
-
 func mergeSort(array []int) {
 	if len(array) > 1 {
 		var midpoint int = len(array) / 2
-		var firstHalf []int = array[:midpoint];
+		var firstHalf []int = array[:midpoint]
 		mergeSort(firstHalf)
-		
+
 		var secondHalf []int = array[midpoint:]
 		mergeSort(secondHalf)
 
@@ -19,7 +17,7 @@ func mergeSort(array []int) {
 }
 
 func merge(firstHalf []int, secondHalf []int) []int {
-	var temp = make([]int, len(firstHalf) + len(secondHalf))
+	var temp = make([]int, len(firstHalf)+len(secondHalf))
 
 	var current1 int = 0
 	var current2 int = 0
@@ -50,13 +48,4 @@ func merge(firstHalf []int, secondHalf []int) []int {
 	}
 
 	return temp
-}
-
-func main() {
-	fmt.Println("testing merge sort in go...")
-
-	var unsortedArray = []int{6, 2, 4, 8, 1, 9, 3, 5, 7}
-	fmt.Println("unsorted array -> ", unsortedArray)
-	mergeSort(unsortedArray)
-	fmt.Println("sorted array -> ", unsortedArray)
 }
