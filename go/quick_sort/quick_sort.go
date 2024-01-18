@@ -1,12 +1,10 @@
 package algorithms_in
 
-import "fmt"
-
 func quickSort(list []int, first int, last int) {
-	if (last > first) {
+	if last > first {
 		var pivotIndex int = partition(list, first, last)
-		quickSort(list, first, pivotIndex - 1)
-		quickSort(list, pivotIndex + 1, last)
+		quickSort(list, first, pivotIndex-1)
+		quickSort(list, pivotIndex+1, last)
 	}
 }
 
@@ -42,13 +40,4 @@ func partition(list []int, first int, last int) int {
 	} else {
 		return first
 	}
-}
-
-func main() {
-	fmt.Println("testing quick sort in go...")
-
-	var unsortedArray = []int{6, 2, 4, 8, 1, 9, 3, 5, 7}
-	fmt.Println("unsorted array -> ", unsortedArray)
-	quickSort(unsortedArray, 0, len(unsortedArray) - 1)
-	fmt.Println("sorted array -> ", unsortedArray)
 }
