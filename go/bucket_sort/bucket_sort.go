@@ -1,7 +1,6 @@
 package algorithms_in
 
 import (
-	"fmt"
 	"math"
 )
 
@@ -66,18 +65,4 @@ func bucket_sort2(list []int) {
 			}
 		}
 	}
-}
-
-func main() {
-	fmt.Println("testing bucket sort in go...")
-
-	var unsortedArray = []int{6, 2, 4, 8, 1, 9, 3, 5, 7}
-	fmt.Println("unsorted array -> ", unsortedArray)
-	bucket_sort(unsortedArray)
-	fmt.Println("sorted array -> ", unsortedArray)
-	
-	var unsortedArray2 = []int{6, 2, 4, 8, 1, 9, 3, 5, 7}
-	fmt.Println("unsorted array -> ", unsortedArray2)
-	bucket_sort2(unsortedArray2)
-	fmt.Println("sorted array -> ", unsortedArray2)
 }
