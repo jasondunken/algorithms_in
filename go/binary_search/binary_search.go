@@ -1,6 +1,6 @@
 package algorithms_in
 
-func binarySearch(array []int, query int) int {
+func BinarySearch(array []int, query int) int {
 	var l int = 0
 	var r int = len(array) - 1
 

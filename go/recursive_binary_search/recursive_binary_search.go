@@ -1,6 +1,6 @@
 package algorithms_in
 
-func recursiveBinarySearch(array []int, l int, r int, query int) bool {
+func RecursiveBinarySearch(array []int, l int, r int, query int) bool {
 	if l > r {
 		return false
 	}
@@ -10,10 +10,10 @@ func recursiveBinarySearch(array []int, l int, r int, query int) bool {
 		return true
 	}
 	if array[i] < query {
-		return recursiveBinarySearch(array, i+1, r, query)
+		return RecursiveBinarySearch(array, i+1, r, query)
 	}
 	if array[i] > query {
-		return recursiveBinarySearch(array, l, i-1, query)
+		return RecursiveBinarySearch(array, l, i-1, query)
 	}
 
 	return false

@@ -1,10 +1,8 @@
 package algorithms_in
 
-import (
-	"math"
-)
+import "math"
 
-func bucketSort(list []int) {
+func BucketSort(list []int) {
 	var max int = math.MinInt
 	for _, val := range list {
 		if val > max {
@@ -32,7 +30,7 @@ func bucketSort(list []int) {
 	}
 }
 
-func bucketSort2(list []int) {
+func BucketSort2(list []int) {
 	var min int = list[0];
 	var max int = list[0];
 	for _, val := range list {

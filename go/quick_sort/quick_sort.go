@@ -1,10 +1,10 @@
 package algorithms_in
 
-func quickSort(list []int, first int, last int) {
+func QuickSort(list []int, first int, last int) {
 	if last > first {
 		var pivotIndex int = partition(list, first, last)
-		quickSort(list, first, pivotIndex-1)
-		quickSort(list, pivotIndex+1, last)
+		QuickSort(list, first, pivotIndex-1)
+		QuickSort(list, pivotIndex+1, last)
 	}
 }
 

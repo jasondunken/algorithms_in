@@ -1,6 +1,6 @@
 package algorithms_in
 
-func selectionSort(array []int) {
+func SelectionSort(array []int) {
 	for i := 0; i < len(array); i++ {
 		var currentMin = array[i]
 		var currentMinIndex = i

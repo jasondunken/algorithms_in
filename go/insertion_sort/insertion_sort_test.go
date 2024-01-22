@@ -5,7 +5,7 @@ import "testing"
 func TestInsertionSort(t *testing.T) {
 	var unsortedArray = []int{6, 2, 4, 8, 1, 9, 3, 5, 7}
 	var sortedArray = []int{1, 2, 3, 4, 5, 6, 7, 8, 9}
-	insertionSort(unsortedArray)
+	InsertionSort(unsortedArray)
 
 	assertCorrectResult(t, unsortedArray, sortedArray)
 }
@@ -13,7 +13,7 @@ func TestInsertionSort(t *testing.T) {
 func TestInsertionSort2(t *testing.T) {
 	var unsortedArray = []int{6, 2, 4, 8, 1, 9, 3, 5, 7}
 	var sortedArray = []int{1, 2, 3, 4, 5, 6, 7, 8, 9}
-	insertionSort2(unsortedArray)
+	InsertionSort2(unsortedArray)
 
 	assertCorrectResult(t, unsortedArray, sortedArray)
 }

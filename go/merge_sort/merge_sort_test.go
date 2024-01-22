@@ -5,7 +5,7 @@ import "testing"
 func TestMergeSort(t *testing.T) {
 	var unsortedArray = []int{6, 2, 4, 8, 1, 9, 3, 5, 7}
 	var sortedArray = []int{1, 2, 3, 4, 5, 6, 7, 8, 9}
-	mergeSort(unsortedArray)
+	MergeSort(unsortedArray)
 
 	assertCorrectResult(t, unsortedArray, sortedArray)
 }

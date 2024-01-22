@@ -5,7 +5,7 @@ import "testing"
 func TestBucketSort(t *testing.T) {
 	var unsortedArray = []int{6, 2, 4, 8, 1, 9, 3, 5, 7}
 	var sortedArray = []int{1, 2, 3, 4, 5, 6, 7, 8, 9}
-	bucketSort(unsortedArray)
+	BucketSort(unsortedArray)
 
 	assertCorrectResult(t, unsortedArray, sortedArray)
 }
@@ -13,7 +13,7 @@ func TestBucketSort(t *testing.T) {
 func TestBucketSort2(t *testing.T) {
 	var unsortedArray = []int{6, 2, 4, 8, 1, 9, 3, 5, 7}
 	var sortedArray = []int{1, 2, 3, 4, 5, 6, 7, 8, 9}
-	bucketSort2(unsortedArray)
+	BucketSort2(unsortedArray)
 
 	assertCorrectResult(t, unsortedArray, sortedArray)
 }

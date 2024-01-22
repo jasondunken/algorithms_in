@@ -1,13 +1,13 @@
 package algorithms_in
 
-func mergeSort(array []int) {
+func MergeSort(array []int) {
 	if len(array) > 1 {
 		var midpoint int = len(array) / 2
 		var firstHalf []int = array[:midpoint]
-		mergeSort(firstHalf)
+		MergeSort(firstHalf)
 
 		var secondHalf []int = array[midpoint:]
-		mergeSort(secondHalf)
+		MergeSort(secondHalf)
 
 		var temp []int = merge(firstHalf, secondHalf)
 		for i := 0; i < len(temp); i++ {
