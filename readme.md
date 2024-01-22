@@ -29,7 +29,7 @@
 
 -   Quick sort ([C](/c/quick_sort.c.c), [C#](/cs/algorithms_in/quick_sort.cs), [C++](/cpp/quick_sort.cpp), [Go](/go/quick_sort/quick_sort.go), [Java](/javalang/quicksort/QuickSort.java), [Javascript](/js/quick_sort.js), [Python](/python/quick_sort.py), [Rust](/rust/algorithms_in/src/quick_sort.rs))
 
--   Heap sort ([C#](/cs/algorithms_in/heap_sort.cs), [Java](/javalang/heapsort/HeapSort.java), [Javascript](/js/heap_sort.js), [Python](/python/heap_sort.py))
+-   Heap sort ([C#](/cs/algorithms_in/heap_sort.cs), [Go](/go/heap_sort/heap_sort.go), [Java](/javalang/heapsort/HeapSort.java), [Javascript](/js/heap_sort.js), [Python](/python/heap_sort.py))
 
 -   Bucket sort ([C](/c/bucket_sort.c), [C#](/cs/algorithms_in/bucket_sort.cs), [C++](/cpp/bucket_sort.cpp), [Go](/go/bucket_sort/bucket_sort.go), [Java](/javalang/bucketsort/BucketSort.java), [Javascript](/js/bucket_sort.js), [Python](/python/bucket_sort.py)), [Rust](/rust/algorithms_in/src/bucket_sort.rs)
 
