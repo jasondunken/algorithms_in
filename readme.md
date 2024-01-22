@@ -13,7 +13,7 @@
 
 ### Algorithms
 
--   Sequential binary search ([C](/c/binary_search.c), [C#](/cs/algorithms_in/binary_search.cs), [C++](/cpp/binary_search.cpp), [Go](/go/binary_search/binary_search.go), [Java](/javalang/binarysearch/BinarySearch.java), [Javascript](/js/binary_search.js), [Python](/python/binary_search.py), [Rust](/rust/algorithms_in/src/binary_search.rs))
+-   Binary search ([C](/c/binary_search.c), [C#](/cs/algorithms_in/binary_search.cs), [C++](/cpp/binary_search.cpp), [Go](/go/binary_search/binary_search.go), [Java](/javalang/binarysearch/BinarySearch.java), [Javascript](/js/binary_search.js), [Python](/python/binary_search.py), [Rust](/rust/algorithms_in/src/binary_search.rs))
 
 -   Recursive binary search ([C](/c/recursive_binary_search.c), [C#](/cs/algorithms_in/recursive_binary_search.cs), [C++](/cpp/recursive_binary_search.cpp), [Go](/go/recursive_binary_search/recursive_binary_search.go), [Java](/javalang/recursivebinarysearch/RecursiveBinarySearch.java), [Javascript](/js/recursive_binary_search.js), [Python](/python/recursive_binary_search.py), [Rust](/rust/algorithms_in/src/recursive_binary_search.rs))
 
